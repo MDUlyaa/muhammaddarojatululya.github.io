@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Darojatul 'Ulya | Profile</title>
+<meta name="description" content="Profile of Muhammad Darojatul 'Ulya, Electrical Engineering Technology student at Universitas Gadjah Mada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--panel:#101010;--line:#2b2b2b;--text:#f2f2f2;--muted:#a8a8a8;--red:#ff2d2d;--red-bg:#d90b0b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:1.0625rem;line-height:1.65}
+a{color:var(--red)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:48rem;margin:0 auto;padding:0 1.25rem}
+nav{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav ul{list-style:none;margin:0;padding:.85rem 0;display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;font-size:.95rem}
+nav a{color:var(--text);text-decoration:none;border-bottom:2px solid transparent;transition:border-color .2s,color .2s}
+nav a:hover{color:var(--red);border-color:var(--red)}
+header{padding:3.5rem 0 1.5rem;display:flex;gap:2rem;align-items:center;justify-content:space-between;flex-wrap:wrap-reverse}
+h1{margin:0;font-size:clamp(2.2rem,8vw,3.8rem);line-height:1.06;font-weight:700;letter-spacing:-.025em}
+.tagline{margin:1rem 0 0;font-size:1.15rem;color:var(--muted);max-width:30rem}
+.photo{width:9.5rem;height:9.5rem;border-radius:50%;object-fit:cover;background:#1b1b1b;border:3px solid var(--red);box-shadow:8px 8px 0 #3a0a0a}
+.wave{display:block;width:100%;height:4.5rem;margin:1rem 0 .5rem}
+.wave path{fill:none;stroke:var(--red);stroke-width:2.5;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+h2{margin:3rem 0 1rem;font-size:1.6rem;line-height:1.25;display:flex;align-items:center;gap:.8rem}
+h2::after{content:"";height:2px;flex:1;background:linear-gradient(90deg,var(--red),transparent)}
+h3.group{margin:1.4rem 0 .2rem;font-size:1rem;color:var(--muted);font-weight:500}
+p{margin:.4rem 0;max-width:40rem}
+.hint{color:var(--muted);font-size:.9rem}
+.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--line);border-radius:8px;margin:.8rem 0;transition:border-color .25s,transform .25s}
+.card:hover,.card.open{border-left-color:var(--red)}
+.card:hover{transform:translateX(3px)}
+.card>button{all:unset;box-sizing:border-box;display:flex;width:100%;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 1.1rem;cursor:pointer}
+.card>button:focus-visible{outline:3px solid var(--red);outline-offset:-3px;border-radius:6px}
+.ttl{font-weight:700;font-size:1.08rem}
+.sub{display:block;color:var(--muted);font-size:.92rem;font-weight:400;margin-top:.1rem}
+.chev{flex:none;width:1.6rem;height:1.6rem;border:2px solid var(--red);border-radius:50%;position:relative;transition:transform .3s,background .3s}
+.chev::before,.chev::after{content:"";position:absolute;left:50%;top:50%;width:.7rem;height:2px;background:var(--red);transform:translate(-50%,-50%)}
+.chev::after{transform:translate(-50%,-50%) rotate(90deg)}
+.card.open .chev{transform:rotate(45deg);background:var(--red)}
+.card.open .chev::before,.card.open .chev::after{background:#000}
+.body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.card.open .body{grid-template-rows:1fr}
+.body>div{overflow:hidden}
+.in{padding:0 1.1rem 1.1rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0 0;padding:0;list-style:none}
+.tags li{border:1px solid var(--red);color:var(--red);border-radius:99px;padding:.1rem .7rem;font-size:.85rem}
+.body img{max-width:100%;height:auto;border-radius:6px;margin-top:.7rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin:.5rem 0}
+.chip{all:unset;box-sizing:border-box;cursor:pointer;padding:.45rem 1rem;border:1px solid var(--line);border-radius:99px;background:var(--panel);transition:background .2s,border-color .2s}
+.chip:hover{border-color:var(--red)}
+.chip[aria-pressed="true"]{background:var(--red-bg);border-color:var(--red-bg);color:#fff}
+.chip:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.skill-note{min-height:3.2rem;margin:.6rem 0 0;padding:.8rem 1rem;border-left:4px solid var(--red);background:var(--panel);border-radius:0 8px 8px 0;color:var(--muted)}
+.award{display:flex;gap:.8rem;align-items:flex-start;padding:1rem 1.1rem;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:8px}
+.contact{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.6rem}
+.btn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-block;padding:.7rem 1.3rem;border-radius:8px;background:var(--red-bg);color:#fff;font-weight:500;transition:transform .2s,background .2s}
+.btn:hover{background:#f01515;transform:translateY(-2px)}
+.btn.alt{background:transparent;border:2px solid var(--red);color:var(--red)}
+.btn.alt:hover{background:var(--red-bg);color:#fff}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+#toast{position:fixed;left:50%;bottom:1.5rem;transform:translate(-50%,2rem);background:var(--red-bg);color:#fff;padding:.6rem 1.2rem;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding:1.5rem 0 2.5rem;color:var(--muted);font-size:.9rem}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+h1,.tagline,.photo{animation:rise .7s ease both}
+.tagline{animation-delay:.12s}.photo{animation-delay:.2s}
+.wave path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.2s .3s ease-out forwards}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.wave path{stroke-dashoffset:0}}
+@media (max-width:30rem){header{padding-top:2.2rem}}
+</style>
+</head>
+<body>
+<nav aria-label="Main navigation"><div class="wrap"><ul>
+  <li><a href="#about">About</a></li>
+  <li><a href="#education">Education</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul></div></nav>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Muhammad Darojatul 'Ulya</h1>
+      <p class="tagline">Electrical Engineering Technology student at Universitas Gadjah Mada, enthusiastic about renewable energy.</p>
+    </div>
+    <!-- Save your photo as foto.jpg in the same folder as this file -->
+    <img class="photo" src="foto.jpg" alt="Portrait of Muhammad Darojatul 'Ulya" onerror="this.style.display='none'">
+  </header>
+  <svg class="wave" viewBox="0 0 800 80" preserveAspectRatio="none" aria-hidden="true">
+    <path pathLength="1" d="M0 40 C25 0,75 0,100 40 S175 80,200 40 S275 0,300 40 S375 80,400 40 L400 10 L460 10 L460 70 L520 70 L520 10 L580 10 L580 70 L640 70 L640 10 L700 10 L700 40 L800 40"/>
+  </svg>
+
+  <main>
+    <section id="about">
+      <h2>About me</h2>
+      <p>I am a first-year Electrical Engineering Technology student at Gadjah Mada University, and I am enthusiastic about renewable energy. I work with Arduino, C++ and Python, and I communicate well in teams and in public. I want to keep developing myself, build innovations, and take an active part in my community.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p class="hint">Tap a card to open the details.</p>
+      <div class="card"><button aria-expanded="false"><span><span class="ttl">Gadjah Mada University</span><span class="sub">Electrical Engineering Technology, 2026 to present</span></span><span class="chev"></span></button>
+        <div class="body"><div><div class="in"><p>Department of Electrical Engineering and Informatics (DTEDI), School of Vocational Studies.</p></div></div></div></div>
+      <div class="card"><button aria-expanded="false"><span><span class="ttl">SMA N 1 Boyolali</span><span class="sub">Engineering Class, 2023 to 2026</span></span><span class="chev"></span></button>
+        <div class="body"><div><div class="in"><p>Senior high school in Boyolali, Central Java.</p></div></div></div></div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p class="hint">Tap a skill to see how I use it.</p>
+      <h3 class="group">Technical</h3>
+      <div class="chips">
+        <button class="chip" aria-pressed="false" data-note="Microcontrollers and prototyping: I design prototypes with Arduino UNO for student projects.">Arduino UNO</button>
+        <button class="chip" aria-pressed="false" data-note="I program in C++ for Arduino projects.">C++</button>
+        <button class="chip" aria-pressed="false" data-note="I use Python for Arduino-related work, data analysis, and to practise programming logic and code structure.">Python</button>
+        <button class="chip" aria-pressed="false" data-note="I process data in Microsoft Excel and write documents in LaTeX.">Excel &amp; LaTeX</button>
+      </div>
+      <h3 class="group">Soft skills</h3>
+      <div class="chips">
+        <button class="chip" aria-pressed="false" data-note="I balance my studies with organisation work and weekly teaching.">Time management</button>
+        <button class="chip" aria-pressed="false" data-note="I work in teams in scout events and in the youth organisation.">Teamwork</button>
+        <button class="chip" aria-pressed="false" data-note="I approach problems by analysing the data and questioning assumptions.">Analytical and critical thinking</button>
+        <button class="chip" aria-pressed="false" data-note="I break a problem into smaller parts and test each solution.">Problem solving</button>
+        <button class="chip" aria-pressed="false" data-note="I brief groups at events and teach children every week.">Public speaking</button>
+      </div>
+      <p class="skill-note" id="skillNote" aria-live="polite">Choose a skill above.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects and activities</h2>
+      <p class="hint">Tap a card to open the details.</p>
+      <div class="card"><button aria-expanded="false"><span><span class="ttl">Smart Parking System</span><span class="sub">Arduino UNO project</span></span><span class="chev"></span></button>
+        <div class="body"><div><div class="in"><p>An Arduino UNO project that uses an infrared sensor and an RFID card to manage parking access.</p><ul class="tags"><li>Arduino UNO</li><li>Infrared sensor</li><li>RFID</li></ul>
+        <!-- Optional photo: <img src="parking.jpg" alt="Smart Parking System prototype"> --></div></div></div></div>
+      <div class="card"><button aria-expanded="false"><span><span class="ttl">Simple App Project</span><span class="sub">MIT App Inventor</span></span><span class="chev"></span></button>
+        <div class="body"><div><div class="in"><p>A simple mobile app built with MIT App Inventor, using drag-and-drop visual blocks.</p><ul class="tags"><li>MIT App Inventor</li><li>Visual blocks</li></ul></div></div></div></div>
+      <div class="card"><button aria-expanded="false"><span><span class="ttl">Instrument calibration and measurement uncertainty</span><span class="sub">Physics practical</span></span><span class="chev"></span></button>
+        <div class="body"><div><div class="in"><p>I studied calibration procedures for basic electrical instruments and analysed the uncertainty (error) in physical measurements.</p></div></div></div></div>
+      <div class="card"><button aria-expanded="false"><span><span class="ttl">Programming logic with Python</span><span class="sub">Self-study</span></span><span class="chev"></span></button>
+        <div class="body"><div><div class="in"><p>I explore programming logic and code structure using the Python language.</p><ul class="tags"><li>Python</li></ul></div></div></div></div>
+      <div class="card"><button aria-expanded="false"><span><span class="ttl">Teaching Scouting</span><span class="sub">SDN 1 Kebonbimo, every Saturday</span></span><span class="chev"></span></button>
+        <div class="body"><div><div class="in"><p>I teach Scouting to students at SDN 1 Kebonbimo every Saturday.</p></div></div></div></div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience and awards</h2>
+      <div class="card"><button aria-expanded="false"><span><span class="ttl">Field Coordination</span><span class="sub">Pandawa Srikandi Scout Troop, 2023 to 2025</span></span><span class="chev"></span></button>
+        <div class="body"><div><div class="in"><p>I coordinated and briefed all members on the day of each event and made sure the event ran according to plan.</p></div></div></div></div>
+      <div class="card"><button aria-expanded="false"><span><span class="ttl">Public Relations</span><span class="sub">Youth Organization, 2021 to present</span></span><span class="chev"></span></button>
+        <div class="body"><div><div class="in"><p>I announce and distribute invitations for events, obtain the necessary permits from village officials, and maintain good relations with the local community.</p></div></div></div></div>
+      <div class="award" style="margin-top:.8rem"><div><span class="ttl">3rd Place, Lomba Cerdas-Cermat Pramuka (LCCP)</span><span class="sub">Raimuna Cabang IX, Kwarcab Boyolali, 2024</span></div></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <button class="btn" id="copyMail" data-mail="muhammaddarojatululya@mail.ugm.ac.id">Copy email</button>
+        <a class="btn alt" href="https://www.linkedin.com/in/muhammad-darojatul-ulya-9046933a4" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="hint">Email: muhammaddarojatululya@mail.ugm.ac.id</p>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 Muhammad Darojatul 'Ulya</p></footer>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+document.querySelectorAll('.card>button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var c=b.parentElement,o=!c.classList.contains('open');
+    c.classList.toggle('open',o);b.setAttribute('aria-expanded',o);
+  });
+});
+var note=document.getElementById('skillNote'),chips=document.querySelectorAll('.chip');
+chips.forEach(function(c){
+  c.addEventListener('click',function(){
+    var on=c.getAttribute('aria-pressed')==='true';
+    chips.forEach(function(x){x.setAttribute('aria-pressed','false')});
+    if(on){note.textContent='Choose a skill above.';return}
+    c.setAttribute('aria-pressed','true');note.textContent=c.dataset.note;
+  });
+});
+var toast=document.getElementById('toast');
+function show(t){toast.textContent=t;toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},1800)}
+document.getElementById('copyMail').addEventListener('click',function(){
+  var m=this.dataset.mail;
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(m).then(function(){show('Email copied')},function(){show(m)});
+  }else{show(m)}
+});
+</script>
+</body>
+</html>
